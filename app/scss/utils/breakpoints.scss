@@ -1,0 +1,23 @@
+// large : 950px medium : 640px xlarge : 1400px
+$breakpoints: (
+    'medium' : '40em',
+    'large' : '59.375em',
+    'xlarge' : '87.5em',
+);
+
+
+@mixin breakpoint($size) {
+    @media (min-width: map-get($breakpoints, $size)) {
+        @content;
+    }
+};
+
+// Usage 
+//so, you can change the size here and it will update everywhere without having to change each media query in the code
+/*
+    .container {
+        @include breakpoint('medium') {
+            background-color: red;
+        }
+    }
+*/
