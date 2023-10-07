@@ -1,7 +1,8 @@
 @use '../utils' as *;
 
 
-.toggle {
+.header__toggle {
+    border: none;
     &__button{
         width: rem(16);
         height: rem(16);

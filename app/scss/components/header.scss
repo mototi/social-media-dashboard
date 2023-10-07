@@ -1,0 +1,8 @@
+@use '../utils' as *;
+
+.header{
+    @include breakpoint(large){
+        display: flex;
+        justify-content: space-between;
+    }
+}
