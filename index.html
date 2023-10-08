@@ -22,11 +22,13 @@
 
     <div class="header__title">    
       <h1> Social Media Dashboard </h1>
-      Total Followers : 1256478
+      <span class="header__subtitle"> Total Followers : 125,6478 </span>
     </div>
 
-    <fieldset class="header__toggle" aria-label="theme toggle" role="rediogroup">
-      <label for="dark">Dark Mode</label>
+    <fieldset class="header__toggle toggle" aria-label="theme toggle" role="rediogroup">
+      <label for="dark">Dark</label>
+      <label for="system">System Pref</label>
+      <label for="light">Light</label>
       <div class="toggle__wrapper">
         <input type="radio" name="theme" id="dark" value="dark">
         <input type="radio" name="theme" id="system" value="system" checked>
@@ -34,8 +36,6 @@
         <span aria-hidden="true" class="toggle__background"></span>
         <span aria-hidden="true" class="toggle__button"></span>
       </div>
-      <label for="light">System Pref</label>
-      <label for="light">Light Mode</label>
     </fieldset>
   </header>
 
