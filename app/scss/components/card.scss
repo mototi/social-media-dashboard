@@ -1,5 +1,96 @@
 @use '../utils' as *;
 
 .card {
-    padding: rem(20);
+    background-color: var(--dark-card);
+    color: var(--dark-text1);
+    border-radius: rem(5);
+    text-align: center;
+    padding: rem(25);
+    width: 100%;
+
+    @include breakpoint(large) {
+        width: rem(255);
+    }
+     &--facebook{
+        border-top: rem(4) solid var(--facebook);
+     }
+    &--twitter{
+        border-top: rem(4) solid var(--twitter);
+    }
+    &--instagram{
+        
+    }
+    &--youtube{
+        border-top: rem(4) solid var(--youtube);
+    }
+
+    &__platform{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap : rem(8);
+        margin-bottom: rem(28);
+    }
+    
+    &__icon{
+        &--facebook{
+        }
+        &--twitter{
+        }
+        &--instagram{
+        }
+        &--youtube{
+        }
+    }
+
+    &__username{
+        font-size: rem(12);
+        font-weight: 700;
+    }
+
+    &__followers{
+        margin-bottom: rem(25);
+    }
+
+    &__count{
+        color: var(--dark-text2);
+        font-weight: 700;
+        letter-spacing: rem(-2);
+        line-height: 1;
+        margin-bottom: rem(4);
+        &--big{
+            font-size: rem(56);
+        }
+        &--small{
+
+        }
+    }
+
+    &__label{
+        font-size: rem(12);
+        font-weight: 400;
+        color: var(--dark-text1);
+        letter-spacing : rem(5);
+        text-transform: uppercase;
+    }
+
+    &__change{
+        font-size: rem(12);
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--up{
+            color: var(--limegreen);
+        }
+        &--down{
+            color: var(--brightred);
+        }
+
+
+        img{
+            margin-right: rem(4);
+        }
+    }
+
 }

@@ -12,6 +12,13 @@ $breakpoints: (
     }
 };
 
+@mixin breakpoint-up($size) {
+    @media (max-width: map-get($breakpoints, $size)) {
+        @content;
+    }
+};
+
+
 // Usage 
 //so, you can change the size here and it will update everywhere without having to change each media query in the code
 /*

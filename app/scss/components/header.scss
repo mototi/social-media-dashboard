@@ -4,16 +4,26 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: rem(36) auto 0 auto;
+    margin: rem(36) auto rem(48) auto;
     align-items: center;
 
-
+    &__title{
+        @include breakpoint-up(medium){
+            width: 100%;
+            border-bottom: rem(1) solid var(--light-text1);
+            margin-bottom: rem(26);
+            padding-bottom: rem(26);
+        }
+    }
+    
     &__subtitle{
         font-size: rem(14);
-        font-weight: 700;
+        font-weight: 500;
         color: var(--dark-text1);
     }
 
-    
+    @include breakpoint-up(medium){
+        margin: rem(36) auto rem(32) auto;
+    }
     
 }

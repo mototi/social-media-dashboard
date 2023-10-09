@@ -12,6 +12,7 @@
     label {
         font-size: rem(14);
         cursor: pointer;
+        color: var(--toggle);
         &[for="dark"] {
             grid-column: 1/2;
             grid-row: 1/2;
