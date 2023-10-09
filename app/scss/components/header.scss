@@ -1,16 +1,19 @@
 @use '../utils' as *;
 
 .header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: rem(36) auto 0 auto;
-    @include breakpoint(medium){
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+    align-items: center;
+
 
     &__subtitle{
         font-size: rem(14);
         font-weight: 700;
         color: var(--dark-text1);
     }
+
+    
+    
 }

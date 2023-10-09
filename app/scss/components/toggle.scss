@@ -4,11 +4,13 @@
 .toggle {
     border: none;
     display: grid;
-    grid-template-columns: repeat(3 , 1fr);
+    grid-template-columns: 1fr rem(48) 1fr;
     grid-template-rows: repeat(2 , 1fr);
-    gap: rem(12);
+    gap:rem(4.8) rem(8);
+    margin: 0;
 
     label {
+        font-size: rem(14);
         cursor: pointer;
         &[for="dark"] {
             grid-column: 1/2;
@@ -28,9 +30,18 @@
     }
 
     input[type="radio"]{
-        margin: 0;
-        opacity: .7;
+        opacity: 0;
+        cursor: pointer;
+        outline: none;
+        margin: 0 -2px;
         z-index: -1;
+        width: rem(17);
+        height: rem(17);
+        margin-top: rem(2);
+
+        &:focus ~ .toggle__button{
+            outline: 1px solid white;
+        }
     }
 
     &__wrapper{
