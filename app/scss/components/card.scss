@@ -50,16 +50,7 @@
         height: rem(20);
     }
     
-    &__icon{
-        &--facebook{
-        }
-        &--twitter{
-        }
-        &--instagram{
-        }
-        &--youtube{
-        }
-    }
+
 
     &__username{
         font-size: rem(12);
@@ -78,9 +69,6 @@
         margin-bottom: rem(4);
         &--big{
             font-size: rem(56);
-        }
-        &--small{
-
         }
     }
 

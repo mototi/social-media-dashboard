@@ -1,0 +1,52 @@
+@use '../utils' as *;
+
+
+.smallcard {
+    width: 100%;
+
+    @include breakpoint(large) {
+        width: rem(255);
+    }
+
+    &__title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: rem(26);
+    }
+
+    &__subtitle{
+        font-size: rem(12);
+        font-weight: 700;
+        color: var(--dark-text1);
+    }
+
+    &__count{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__num{
+        line-height: 1;
+        font-weight: 700;
+        font-size: rem(36);
+        color: var(--dark-text2);
+    }
+
+    &__per__up{
+        font-size: rem(12);
+        color: var(--limegreen);
+        display: flex;
+        align-items: center;
+        gap : rem(4);
+    }
+
+    &__per__down{
+        font-size: rem(12);
+        color: var(--brightred);
+        display: flex;
+        align-items: center;
+        gap : rem(4);
+    }
+}
