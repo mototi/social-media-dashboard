@@ -3,11 +3,11 @@
 
 .toggle {
     border: none;
-    display: grid;
-    grid-template-columns: 1fr rem(48) 1fr;
-    grid-template-rows: repeat(2 , 1fr);
-    gap:rem(4.8) rem(8);
+    display: flex;
+    align-items: center;
+    gap: rem(13);
     margin: 0;
+    width: fit-content;
 
     label {
         font-size: rem(14);
@@ -18,26 +18,16 @@
             grid-row: 1/2;
             justify-self: right;
         }
-        &[for="system"] {
-            grid-column: 1/4;
-            grid-row: 2/3;
-            justify-self: center;
-        }
-        &[for="light"] {
-            grid-column: 3/4;
-            grid-row: 1/2;
-            justify-self: left;
-        }
     }
 
     input[type="radio"]{
         opacity: 0;
         cursor: pointer;
         outline: none;
-        margin: 0 -2px;
+        margin: 0 ;
         z-index: -1;
-        width: rem(17);
-        height: rem(17);
+        width: rem(20);
+        height: rem(20);
         margin-top: rem(2);
 
         &:focus ~ .toggle__button{
@@ -55,7 +45,7 @@
         top: 0;
         z-index: 100;
         height: 100%;
-        width: 100%;
+        width: rem(42);
         display: block;
         border-radius: rem(12);
         overflow: hidden;
@@ -79,11 +69,6 @@
     }
 
     #light:checked ~ .toggle__button{
-        left: calc(100% - 21px);
-    }
-
-    #system:checked ~ .toggle__button{
-        left: 50%;
-        transform: translateX(-50%);
+        left: calc(100% - 23px);
     }
 }

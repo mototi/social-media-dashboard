@@ -1,6 +1,10 @@
 @use '../utils' as *;
 
 .card {
+    &:hover{
+        background-color: var(--datk-top-bg);
+        cursor: pointer;
+    }
     background-color: var(--dark-card);
     color: var(--dark-text1);
     border-radius: rem(5);

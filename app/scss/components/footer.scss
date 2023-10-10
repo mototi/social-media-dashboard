@@ -5,13 +5,13 @@
     text-align: center;
     font-size: rem(12);
     font-weight: 100;
-    color: var(--dark-text1);
-    span{
-        display: block;
-        margin-bottom: rem(5);
+    color: var(--dark-text2);
+
+    a , a:visited {
+        color: var(--dark-text1);
     }
 
-    a , a:visited , a:active{
+    a:active {
         color: var(--brightred);
     }
 }
