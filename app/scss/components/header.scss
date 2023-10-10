@@ -18,8 +18,8 @@
     
     &__subtitle{
         font-size: rem(14);
-        font-weight: 500;
-        color: var(--dark-text1);
+        font-weight: 700;
+        color: var(--text1-color);
     }
 
     @include breakpoint-up(medium){

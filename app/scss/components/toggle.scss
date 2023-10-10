@@ -11,6 +11,7 @@
 
     label {
         font-size: rem(14);
+        font-weight: 700;
         cursor: pointer;
         color: var(--toggle);
         &[for="dark"] {
@@ -50,10 +51,7 @@
         border-radius: rem(12);
         overflow: hidden;
         pointer-events: none;
-        background: linear-gradient(
-            255deg ,
-            var(--toggle-bg-start) 0%,
-            var(--toggle-bg-end) 98.02%);
+        background: var(--toggle-bg);
     }
 
     &__button{
@@ -64,7 +62,7 @@
         width: rem(18);
         height: rem(18);
         border-radius: 50%;
-        background-color: var(--darg-bg);
+        background-color: var(--toggle-btn);
         transition: all 150ms ease-in-out;
     }
 

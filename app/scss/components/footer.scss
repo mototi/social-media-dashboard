@@ -4,14 +4,18 @@
     margin: auto auto rem(36) auto;
     text-align: center;
     font-size: rem(12);
-    font-weight: 100;
-    color: var(--dark-text2);
+    font-weight: 600;
+    color: var(--text-color);
 
     a , a:visited {
         color: var(--dark-text1);
     }
 
-    a:active {
+    a:active  {
         color: var(--brightred);
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
 }

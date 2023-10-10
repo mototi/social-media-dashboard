@@ -2,10 +2,11 @@
 
 .card {
     &:hover{
-        background-color: var(--datk-top-bg);
+        background-color: var(--card-hover);
         cursor: pointer;
+        box-shadow: 0 0 rem(7) rgba(0,0,0,0.08);
     }
-    background-color: var(--dark-card);
+    background-color: var(--card-bg);
     color: var(--dark-text1);
     border-radius: rem(5);
     text-align: center;
@@ -66,7 +67,7 @@
     }
 
     &__count{
-        color: var(--dark-text2);
+        color: var(--text-color);
         font-weight: 700;
         letter-spacing: rem(-2);
         line-height: 1;
@@ -86,7 +87,7 @@
 
     &__change{
         font-size: rem(12);
-        font-weight: 400;
+        font-weight: 600;
         display: flex;
         justify-content: center;
         align-items: center;
