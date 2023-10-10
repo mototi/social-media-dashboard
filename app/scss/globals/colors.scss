@@ -21,8 +21,16 @@
     --light-text1 : hsl(228, 12%, 44%);
     --light-text2: hsl(230, 17%, 14%);
     --dark-border : hsla(229, 12%, 44%, 0.363);
+    --background : var(--light-bg);
+    --text-color : var(--light-text2);
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: var(--darg-bg);
+        --text-color: var(--dark-text2);
+    }
+}
 
 
 
