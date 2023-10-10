@@ -4,13 +4,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: rem(36) auto rem(48) auto;
+    margin: rem(36) auto rem(36) auto;
     align-items: center;
 
     &__title{
         @include breakpoint-up(medium){
             width: 100%;
-            border-bottom: rem(1) solid var(--light-text1);
+            border-bottom: rem(1) solid var(--dark-border);
             margin-bottom: rem(26);
             padding-bottom: rem(26);
         }

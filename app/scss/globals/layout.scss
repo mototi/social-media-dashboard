@@ -10,7 +10,7 @@
 }
 
 .cards_container{
-  margin:  auto;
+  margin:  auto auto rem(36) auto;
   display: grid;
   grid-template-columns:  1fr 1fr;
   grid-gap: rem(30);
@@ -24,7 +24,7 @@
 }
 
 .cards_sec_container{
-  margin: auto;
+  margin-bottom: rem(36);
   display: grid;
   grid-template-columns: repeat(2 , 1fr);
   grid-gap: rem(30);
@@ -36,4 +36,8 @@
   @include breakpoint-up(medium){
     grid-template-columns:1fr;
   }
+}
+
+.today{
+  margin: auto;
 }

@@ -1,0 +1,17 @@
+@use '../utils' as *;
+
+.footer{
+    margin: auto auto rem(36) auto;
+    text-align: center;
+    font-size: rem(12);
+    font-weight: 100;
+    color: var(--dark-text1);
+    span{
+        display: block;
+        margin-bottom: rem(5);
+    }
+
+    a , a:visited , a:active{
+        color: var(--brightred);
+    }
+}
