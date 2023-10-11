@@ -9,16 +9,16 @@ This project is a social media dashboard that allows users to view various socia
 
 
 ## Features
-_Responsive Design: The layout of the site adjusts dynamically based on the screen size of the user's device. This ensures optimal viewing experience across different devices.
-_Color Theme Toggle: Users have the ability to toggle the color theme of the dashboard to their preference. This feature allows for customization and personalization of the user interface.
-_the website applies the browser theme of the browser (light/dark) 
+-Responsive Design: The layout of the site adjusts dynamically based on the screen size of the user's device. This ensures optimal viewing experience across different devices.
+-Color Theme Toggle: Users have the ability to toggle the color theme of the dashboard to their preference. This feature allows for customization and personalization of the user interface.
+-the website applies the browser theme of the browser (light/dark) 
 
 ## Technologies Used
 The project was developed using the following technologies:
 
-_--HTML--: Used for creating the structure and content of the web pages.
-_SCSS: Used for styling the web pages. SCSS is a preprocessor for CSS that provides additional features and flexibility.
-_JavaScript: Used for implementing interactive functionality and dynamic behavior on the web pages.
+-HTML: Used for creating the structure and content of the web pages.
+-SCSS: Used for styling the web pages. SCSS is a preprocessor for CSS that provides additional features and flexibility.
+-JavaScript: Used for implementing interactive functionality and dynamic behavior on the web pages.
 
 ## Deploying your project
 
