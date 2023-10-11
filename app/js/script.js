@@ -14,7 +14,7 @@ const storage = () => {
     }
 }
 
-const checkLightMode = () => {
+const checkColorMode = () => {
     if (window.matchMedia('(prefers-color-scheme: light)').matches){
         document.getElementById('light').click()
     }
@@ -32,7 +32,7 @@ const setLightMode = () => {
     document.querySelector('body').classList = "light" ;
 }
 
-checkLightMode();
+checkColorMode();
 storage();
 
 btns.forEach(btn => {
