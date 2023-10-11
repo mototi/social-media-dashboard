@@ -21,30 +21,58 @@
     --light-text1 : hsl(228, 12%, 44%);
     --light-text2: hsl(230, 17%, 14%);
     --dark-border : hsla(229, 12%, 44%, 0.363);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background : var(--light-bg);
+        --text-color : var(--light-text2);
+        --text1-color : var(--light-text1);
+        --toggle-bg: var(--toggle);
+        --toggle-btn : var(--light-bg);
+        --card-bg: var(--light-bg-top);
+        --card-hover : var(--light-bg-card);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: var(--darg-bg);
+        --text-color: var(--dark-text2);
+        --text1-color: var(--dark-text1);
+        --toggle-bg: linear-gradient(
+            to right,
+            var(--toggle-bg-start), 
+            var(--toggle-bg-end));
+        --toggle-btn: var(--darg-bg);
+        --card-bg: var(--dark-card);
+        --card-hover : var(--datk-top-bg);
+
+    }
+}
+
+body.light{
     --background : var(--light-bg);
     --text-color : var(--light-text2);
     --text1-color : var(--light-text1);
     --toggle-bg: var(--toggle);
     --toggle-btn : var(--light-bg);
-    --card-bg: var(--light-bg-card);
-    --card-hover : var(--light-bg-top);
+    --card-bg: var(--light-bg-top);
+    --card-hover : var(--light-bg-card);
 }
 
-// @media (prefers-color-scheme: dark) {
-//     :root {
-//         --background: var(--darg-bg);
-//         --text-color: var(--dark-text2);
-//         --text1-color: var(--dark-text1);
-//         --toggle-bg: linear-gradient(
-//             to right,
-//             var(--toggle-bg-start), 
-//             var(--toggle-bg-end));
-//         --toggle-btn: var(--darg-bg);
-//         --card-bg: var(--dark-card);
-//         --card-hover : var(--datk-top-bg);
-
-//     }
-// }
+body.dark{
+    --background: var(--darg-bg);
+    --text-color: var(--dark-text2);
+    --text1-color: var(--dark-text1);
+    --toggle-bg: linear-gradient(
+        to right,
+        var(--toggle-bg-start), 
+        var(--toggle-bg-end));
+    --toggle-btn: var(--darg-bg);
+    --card-bg: var(--dark-card);
+    --card-hover : var(--datk-top-bg);
+}
 
 
 

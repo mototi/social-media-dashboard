@@ -10,7 +10,7 @@
     &__title{
         @include breakpoint-up(medium){
             width: 100%;
-            border-bottom: rem(1) solid var(--dark-border);
+            border-bottom: rem(2) solid var(--dark-border);
             margin-bottom: rem(26);
             padding-bottom: rem(26);
         }

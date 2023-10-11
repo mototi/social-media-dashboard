@@ -4,8 +4,15 @@
     margin: auto auto rem(36) auto;
     text-align: center;
     font-size: rem(12);
-    font-weight: 600;
     color: var(--text-color);
+
+    span{
+        @include breakpoint-up (medium){
+            display: block;
+            margin-bottom: rem(5);
+        }
+    }
+
 
     a , a:visited {
         color: var(--dark-text1);
